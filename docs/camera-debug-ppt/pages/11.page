@@ -1,0 +1,280 @@
+pageType: content
+background:
+  type: solid
+  color: '#F0EAE0'
+notes: 可复用的调试技巧。三条主要动作 + 若干补充。
+elements:
+  - elementId: t1
+    elementType: text
+    bounds:
+      - 48
+      - 27
+      - 665
+      - 20
+    content:
+      text: REUSABLE TECHNIQUES
+      fontFamily: &f
+        latin: Arial
+        ea: Noto Sans CJK SC
+        mac: PingFang SC
+        win: Microsoft YaHei
+      fontSize: 10
+      color: '#252824'
+      lineHeight: 1.1
+      letterSpacing: 1.2
+  - elementId: l2
+    elementType: line
+    bounds:
+      - 48
+      - 59
+      - 864
+      - 1
+    viewBox:
+      - 864
+      - 1
+    points: 0,0 864,0
+    border:
+      width: 0.6
+      color: '#b3b0a8'
+  - elementId: t3
+    elementType: text
+    bounds:
+      - 48
+      - 76
+      - 864
+      - 64
+    content:
+      text: 可以带走的三个调试动作
+      fontFamily: *f
+      fontSize: 32
+      color: '#252824'
+      lineHeight: 1.1
+      bold: true
+  - elementId: t4
+    elementType: text
+    bounds:
+      - 754
+      - 46
+      - 158
+      - 13
+    content:
+      text: 调试技巧
+      fontFamily: *f
+      fontSize: 9
+      color: '#62625c'
+      lineHeight: 1.1
+      align: right
+  - elementId: t5
+    elementType: text
+    bounds:
+      - 48
+      - 164
+      - 348
+      - 25
+    content:
+      text: 适用于任何外设
+      fontFamily: *f
+      fontSize: 13
+      color: '#252824'
+      lineHeight: 1.1
+  - elementId: t6
+    elementType: text
+    bounds:
+      - 48
+      - 207
+      - 332
+      - 177
+    content:
+      text: |-
+        能测量
+        才有判断
+      fontFamily: *f
+      fontSize: 30
+      color: '#252824'
+      lineHeight: 1.1
+      bold: true
+  - elementId: t7
+    elementType: text
+    bounds:
+      - 48
+      - 420
+      - 330
+      - 43
+    content:
+      text: |-
+        补充：拉长超时保护
+        测量前先清空缓冲区
+      fontFamily: *f
+      fontSize: 17
+      color: '#68665F'
+      lineHeight: 1.1
+  - elementId: t8
+    elementType: text
+    bounds:
+      - 441
+      - 167
+      - 50
+      - 38
+    content:
+      text: '1'
+      fontFamily: *f
+      fontSize: 26
+      color: '#252824'
+      lineHeight: 1.1
+  - elementId: t9
+    elementType: text
+    bounds:
+      - 514
+      - 170
+      - 380
+      - 32
+    content:
+      text: 先量引脚，再查寄存器
+      fontFamily: *f
+      fontSize: 23
+      color: '#252824'
+      lineHeight: 1.1
+  - elementId: t10
+    elementType: text
+    bounds:
+      - 514
+      - 211
+      - 398
+      - 47
+    content:
+      text: 用不经过外设的方式（轮询引脚、中断计数）确认信号真的到了 MCU。
+      fontFamily: *f
+      fontSize: 18
+      color: '#252824'
+      lineHeight: 1.1
+  - elementId: t11
+    elementType: text
+    bounds:
+      - 441
+      - 261
+      - 50
+      - 38
+    content:
+      text: '2'
+      fontFamily: *f
+      fontSize: 26
+      color: '#252824'
+      lineHeight: 1.1
+  - elementId: t12
+    elementType: text
+    bounds:
+      - 514
+      - 264
+      - 380
+      - 32
+    content:
+      text: 每一步留下"面包屑"
+      fontFamily: *f
+      fontSize: 23
+      color: '#252824'
+      lineHeight: 1.1
+  - elementId: t13
+    elementType: text
+    bounds:
+      - 514
+      - 305
+      - 398
+      - 47
+    content:
+      text: 用一个变量记下执行到第几步，比断点更快区分"卡死"和"跑完但结果不对"。
+      fontFamily: *f
+      fontSize: 18
+      color: '#252824'
+      lineHeight: 1.1
+  - elementId: t14
+    elementType: text
+    bounds:
+      - 441
+      - 355
+      - 50
+      - 38
+    content:
+      text: '3'
+      fontFamily: *f
+      fontSize: 26
+      color: '#252824'
+      lineHeight: 1.1
+  - elementId: t15
+    elementType: text
+    bounds:
+      - 514
+      - 358
+      - 380
+      - 32
+    content:
+      text: 用一个数字代替一句话
+      fontFamily: *f
+      fontSize: 23
+      color: '#252824'
+      lineHeight: 1.1
+  - elementId: t16
+    elementType: text
+    bounds:
+      - 514
+      - 399
+      - 398
+      - 47
+    content:
+      text: 相邻字变化次数、NACK 计数、一圈字数——可比较、可回归、可写进自检。
+      fontFamily: *f
+      fontSize: 18
+      color: '#252824'
+      lineHeight: 1.1
+  - elementId: l17
+    elementType: line
+    bounds:
+      - 48
+      - 465
+      - 864
+      - 1
+    viewBox:
+      - 864
+      - 1
+    points: 0,0 864,0
+    border:
+      width: 0.6
+      color: '#c3bfb7'
+  - elementId: t18
+    elementType: text
+    bounds:
+      - 48
+      - 475
+      - 864
+      - 25
+    content:
+      text: 这三条让本次六个根因全部定位到"改哪一行"，而不是靠改一圈试出来。
+      fontFamily: *f
+      fontSize: 13
+      color: '#252824'
+      lineHeight: 1.1
+  - elementId: t19
+    elementType: text
+    bounds:
+      - 48
+      - 507
+      - 783
+      - 16
+    content:
+      text: 调试技巧 / 来自本次实测
+      fontFamily: *f
+      fontSize: 9
+      color: '#68665F'
+      lineHeight: 1.1
+  - elementId: t20
+    elementType: text
+    bounds:
+      - 871
+      - 504
+      - 41
+      - 22
+    content:
+      text: '11'
+      fontFamily: *f
+      fontSize: 11
+      color: '#252824'
+      lineHeight: 1.1

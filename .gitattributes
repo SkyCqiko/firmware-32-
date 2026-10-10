@@ -1,0 +1,29 @@
+# ============================================================
+#  统一换行符: 仓库内一律存 LF, 检出到 Windows 自动转 CRLF
+#  避免 Windows/Linux 之间协作时 diff 显示"整个文件都改了"
+# ============================================================
+
+* text=auto eol=lf
+
+# 二进制文件不做换行符转换
+*.png  binary
+*.jpg  binary
+*.jpeg binary
+*.gif  binary
+*.ico  binary
+*.elf  binary
+*.bin  binary
+*.hex  binary
+*.pdf  binary
+
+# 汇编/C 源码按文本处理
+*.c    text
+*.h    text
+*.s    text
+*.md   text
+*.json text
+*.yml  text
+*.yaml text
+
+# 让 GitHub 识别语言构成(避免被当成汇编项目)
+*.s    linguist-language=Assembly

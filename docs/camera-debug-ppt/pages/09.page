@@ -1,0 +1,423 @@
+pageType: content
+background:
+  type: solid
+  color: '#F0EAE0'
+notes: 案例四。提速引入的静默失败，以及用应答检查把失败变成可读数字。
+elements:
+  - elementId: t1
+    elementType: text
+    bounds:
+      - 48
+      - 27
+      - 665
+      - 20
+    content:
+      text: CASE 04 · SILENT FAILURE
+      fontFamily: &f
+        latin: Arial
+        ea: Noto Sans CJK SC
+        mac: PingFang SC
+        win: Microsoft YaHei
+      fontSize: 10
+      color: '#252824'
+      lineHeight: 1.1
+      letterSpacing: 1.2
+  - elementId: l2
+    elementType: line
+    bounds:
+      - 48
+      - 59
+      - 864
+      - 1
+    viewBox:
+      - 864
+      - 1
+    points: 0,0 864,0
+    border:
+      width: 0.6
+      color: '#b3b0a8'
+  - elementId: t3
+    elementType: text
+    bounds:
+      - 48
+      - 76
+      - 864
+      - 64
+    content:
+      text: 案例④ 提速反噬：写失败的静默代价
+      fontFamily: *f
+      fontSize: 32
+      color: '#252824'
+      lineHeight: 1.1
+      bold: true
+  - elementId: t4
+    elementType: text
+    bounds:
+      - 754
+      - 46
+      - 158
+      - 13
+    content:
+      text: 案例 04
+      fontFamily: *f
+      fontSize: 9
+      color: '#62625c'
+      lineHeight: 1.1
+      align: right
+  - elementId: t5
+    elementType: text
+    bounds:
+      - 48
+      - 167
+      - 280
+      - 24
+    content:
+      text: 环节
+      fontFamily: *f
+      fontSize: 11
+      color: '#252824'
+      lineHeight: 1.1
+  - elementId: t6
+    elementType: text
+    bounds:
+      - 373
+      - 167
+      - 170
+      - 24
+    content:
+      text: 实际情况
+      fontFamily: *f
+      fontSize: 11
+      color: '#252824'
+      lineHeight: 1.1
+  - elementId: t7
+    elementType: text
+    bounds:
+      - 523
+      - 167
+      - 170
+      - 24
+    content:
+      text: 机制
+      fontFamily: *f
+      fontSize: 11
+      color: '#252824'
+      lineHeight: 1.1
+  - elementId: t8
+    elementType: text
+    bounds:
+      - 692
+      - 167
+      - 220
+      - 24
+    content:
+      text: 动作
+      fontFamily: *f
+      fontSize: 11
+      color: '#252824'
+      lineHeight: 1.1
+  - elementId: t9
+    elementType: text
+    bounds:
+      - 61
+      - 221
+      - 280
+      - 37
+    content:
+      text: 改动
+      fontFamily: *f
+      fontSize: 18
+      color: '#252824'
+      lineHeight: 1.1
+  - elementId: t10
+    elementType: text
+    bounds:
+      - 373
+      - 214
+      - 129
+      - 45
+    content:
+      text: 1ms→5µs
+      fontFamily: *f
+      fontSize: 22
+      color: '#252824'
+      lineHeight: 1.1
+  - elementId: t11
+    elementType: text
+    bounds:
+      - 523
+      - 224
+      - 145
+      - 33
+    content:
+      text: 想让开机更快
+      fontFamily: *f
+      fontSize: 17
+      color: '#252824'
+      lineHeight: 1.1
+  - elementId: t12
+    elementType: text
+    bounds:
+      - 735
+      - 224
+      - 177
+      - 30
+    content:
+      text: 结果画面偏绿
+      fontFamily: *f
+      fontSize: 16
+      color: '#252824'
+      lineHeight: 1.1
+  - elementId: s13
+    elementType: shape
+    bounds:
+      - 48
+      - 265
+      - 864
+      - 61
+    shapeName: rect
+    fill:
+      type: solid
+      color: '#ead7cc'
+  - elementId: s14
+    elementType: shape
+    bounds:
+      - 48
+      - 265
+      - 3
+      - 61
+    shapeName: rect
+    fill:
+      type: solid
+      color: '#252824'
+  - elementId: t15
+    elementType: text
+    bounds:
+      - 61
+      - 282
+      - 280
+      - 37
+    content:
+      text: 机制
+      fontFamily: *f
+      fontSize: 18
+      color: '#252824'
+      lineHeight: 1.1
+  - elementId: t16
+    elementType: text
+    bounds:
+      - 373
+      - 275
+      - 129
+      - 45
+    content:
+      text: 上升沿
+      fontFamily: *f
+      fontSize: 22
+      color: '#252824'
+      lineHeight: 1.1
+  - elementId: t17
+    elementType: text
+    bounds:
+      - 523
+      - 285
+      - 145
+      - 33
+    content:
+      text: 开漏靠上拉充电
+      fontFamily: *f
+      fontSize: 17
+      color: '#252824'
+      lineHeight: 1.1
+  - elementId: t18
+    elementType: text
+    bounds:
+      - 735
+      - 285
+      - 177
+      - 30
+    content:
+      text: 位延时留足余量
+      fontFamily: *f
+      fontSize: 16
+      color: '#252824'
+      lineHeight: 1.1
+  - elementId: t19
+    elementType: text
+    bounds:
+      - 61
+      - 343
+      - 280
+      - 37
+    content:
+      text: 盲点
+      fontFamily: *f
+      fontSize: 18
+      color: '#252824'
+      lineHeight: 1.1
+  - elementId: t20
+    elementType: text
+    bounds:
+      - 373
+      - 336
+      - 129
+      - 45
+    content:
+      text: 不读应答
+      fontFamily: *f
+      fontSize: 22
+      color: '#252824'
+      lineHeight: 1.1
+  - elementId: t21
+    elementType: text
+    bounds:
+      - 523
+      - 346
+      - 145
+      - 33
+    content:
+      text: 不检查应答位
+      fontFamily: *f
+      fontSize: 17
+      color: '#252824'
+      lineHeight: 1.1
+  - elementId: t22
+    elementType: text
+    bounds:
+      - 735
+      - 346
+      - 177
+      - 30
+    content:
+      text: 写失败完全静默
+      fontFamily: *f
+      fontSize: 16
+      color: '#252824'
+      lineHeight: 1.1
+  - elementId: s23
+    elementType: shape
+    bounds:
+      - 48
+      - 387
+      - 864
+      - 61
+    shapeName: rect
+    fill:
+      type: solid
+      color: '#ead7cc'
+  - elementId: s24
+    elementType: shape
+    bounds:
+      - 48
+      - 387
+      - 3
+      - 61
+    shapeName: rect
+    fill:
+      type: solid
+      color: '#252824'
+  - elementId: t25
+    elementType: text
+    bounds:
+      - 61
+      - 404
+      - 280
+      - 37
+    content:
+      text: 对策
+      fontFamily: *f
+      fontSize: 18
+      color: '#252824'
+      lineHeight: 1.1
+  - elementId: t26
+    elementType: text
+    bounds:
+      - 373
+      - 397
+      - 129
+      - 45
+    content:
+      text: 20µs+ACK
+      fontFamily: *f
+      fontSize: 22
+      color: '#252824'
+      lineHeight: 1.1
+  - elementId: t27
+    elementType: text
+    bounds:
+      - 523
+      - 407
+      - 145
+      - 33
+    content:
+      text: 每写一次查应答
+      fontFamily: *f
+      fontSize: 17
+      color: '#252824'
+      lineHeight: 1.1
+  - elementId: t28
+    elementType: text
+    bounds:
+      - 735
+      - 407
+      - 177
+      - 30
+    content:
+      text: NACK 计数应为 0
+      fontFamily: *f
+      fontSize: 16
+      color: '#252824'
+      lineHeight: 1.1
+  - elementId: l29
+    elementType: line
+    bounds:
+      - 48
+      - 465
+      - 864
+      - 1
+    viewBox:
+      - 864
+      - 1
+    points: 0,0 864,0
+    border:
+      width: 0.6
+      color: '#c3bfb7'
+  - elementId: t30
+    elementType: text
+    bounds:
+      - 48
+      - 475
+      - 864
+      - 25
+    content:
+      text: 提速本身没错；错在没给"提速是否安全"留一个可读的判据。
+      fontFamily: *f
+      fontSize: 13
+      color: '#252824'
+      lineHeight: 1.1
+  - elementId: t31
+    elementType: text
+    bounds:
+      - 48
+      - 507
+      - 783
+      - 16
+    content:
+      text: 实测记录 / 偏色最终确认为光源偏绿，但应答检查保留
+      fontFamily: *f
+      fontSize: 9
+      color: '#68665F'
+      lineHeight: 1.1
+  - elementId: t32
+    elementType: text
+    bounds:
+      - 871
+      - 504
+      - 41
+      - 22
+    content:
+      text: '09'
+      fontFamily: *f
+      fontSize: 11
+      color: '#252824'
+      lineHeight: 1.1

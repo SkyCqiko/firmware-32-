@@ -1,0 +1,319 @@
+pageType: content
+background:
+  type: solid
+  color: '#F0EAE0'
+notes: 调试方法论。四条原则，用三条主行展开。
+elements:
+  - elementId: t1
+    elementType: text
+    bounds:
+      - 48
+      - 27
+      - 665
+      - 20
+    content:
+      text: METHOD
+      fontFamily: &f
+        latin: Arial
+        ea: Noto Sans CJK SC
+        mac: PingFang SC
+        win: Microsoft YaHei
+      fontSize: 10
+      color: '#252824'
+      lineHeight: 1.1
+      letterSpacing: 1.2
+  - elementId: l2
+    elementType: line
+    bounds:
+      - 48
+      - 59
+      - 864
+      - 1
+    viewBox:
+      - 864
+      - 1
+    points: 0,0 864,0
+    border:
+      width: 0.6
+      color: '#b3b0a8'
+  - elementId: t3
+    elementType: text
+    bounds:
+      - 48
+      - 76
+      - 864
+      - 64
+    content:
+      text: 四条原则：让证据代替猜测
+      fontFamily: *f
+      fontSize: 32
+      color: '#252824'
+      lineHeight: 1.1
+      bold: true
+  - elementId: t4
+    elementType: text
+    bounds:
+      - 754
+      - 46
+      - 158
+      - 13
+    content:
+      text: 调试方法
+      fontFamily: *f
+      fontSize: 9
+      color: '#62625c'
+      lineHeight: 1.1
+      align: right
+  - elementId: t5
+    elementType: text
+    bounds:
+      - 48
+      - 164
+      - 348
+      - 25
+    content:
+      text: 本次三条主线
+      fontFamily: *f
+      fontSize: 13
+      color: '#252824'
+      lineHeight: 1.1
+  - elementId: t6
+    elementType: text
+    bounds:
+      - 48
+      - 207
+      - 332
+      - 177
+    content:
+      text: |-
+        不要猜
+        让证据说话
+      fontFamily: *f
+      fontSize: 30
+      color: '#252824'
+      lineHeight: 1.1
+      bold: true
+  - elementId: t7
+    elementType: text
+    bounds:
+      - 48
+      - 420
+      - 330
+      - 43
+    content:
+      text: |-
+        第四条：以实测为准
+        不要照 HAL 注释和文档猜
+      fontFamily: *f
+      fontSize: 17
+      color: '#68665F'
+      lineHeight: 1.1
+  - elementId: t8
+    elementType: text
+    bounds:
+      - 441
+      - 167
+      - 50
+      - 38
+    content:
+      text: '1'
+      fontFamily: *f
+      fontSize: 26
+      color: '#252824'
+      lineHeight: 1.1
+  - elementId: t9
+    elementType: text
+    bounds:
+      - 514
+      - 170
+      - 249
+      - 32
+    content:
+      text: 分层二分
+      fontFamily: *f
+      fontSize: 23
+      color: '#252824'
+      lineHeight: 1.1
+  - elementId: t10
+    elementType: text
+    bounds:
+      - 780
+      - 176
+      - 132
+      - 24
+    content:
+      text: 范围先砍一半
+      fontFamily: *f
+      fontSize: 10
+      color: '#62625c'
+      lineHeight: 1.1
+  - elementId: t11
+    elementType: text
+    bounds:
+      - 514
+      - 211
+      - 398
+      - 47
+    content:
+      text: 用不依赖被测层的手段测量，先把故障锁在采集、搬运、显示三者之一。
+      fontFamily: *f
+      fontSize: 18
+      color: '#252824'
+      lineHeight: 1.1
+  - elementId: t12
+    elementType: text
+    bounds:
+      - 441
+      - 261
+      - 50
+      - 38
+    content:
+      text: '2'
+      fontFamily: *f
+      fontSize: 26
+      color: '#252824'
+      lineHeight: 1.1
+  - elementId: t13
+    elementType: text
+    bounds:
+      - 514
+      - 264
+      - 249
+      - 32
+    content:
+      text: 把状态变成数字
+      fontFamily: *f
+      fontSize: 23
+      color: '#252824'
+      lineHeight: 1.1
+  - elementId: t14
+    elementType: text
+    bounds:
+      - 780
+      - 270
+      - 132
+      - 24
+    content:
+      text: 可判读
+      fontFamily: *f
+      fontSize: 10
+      color: '#62625c'
+      lineHeight: 1.1
+  - elementId: t15
+    elementType: text
+    bounds:
+      - 514
+      - 305
+      - 398
+      - 47
+    content:
+      text: 探针变量、中断计数、面包屑；"看起来没反应"不是证据，"计数为 0"才是。
+      fontFamily: *f
+      fontSize: 18
+      color: '#252824'
+      lineHeight: 1.1
+  - elementId: t16
+    elementType: text
+    bounds:
+      - 441
+      - 355
+      - 50
+      - 38
+    content:
+      text: '3'
+      fontFamily: *f
+      fontSize: 26
+      color: '#252824'
+      lineHeight: 1.1
+  - elementId: t17
+    elementType: text
+    bounds:
+      - 514
+      - 358
+      - 249
+      - 32
+    content:
+      text: 一次只改一个变量
+      fontFamily: *f
+      fontSize: 23
+      color: '#252824'
+      lineHeight: 1.1
+  - elementId: t18
+    elementType: text
+    bounds:
+      - 780
+      - 364
+      - 132
+      - 24
+    content:
+      text: 可复现
+      fontFamily: *f
+      fontSize: 10
+      color: '#62625c'
+      lineHeight: 1.1
+  - elementId: t19
+    elementType: text
+    bounds:
+      - 514
+      - 399
+      - 398
+      - 47
+    content:
+      text: 改之前先写下"如果假设成立，应该看到什么数"，否则改动无法被证伪。
+      fontFamily: *f
+      fontSize: 18
+      color: '#252824'
+      lineHeight: 1.1
+  - elementId: l20
+    elementType: line
+    bounds:
+      - 48
+      - 465
+      - 864
+      - 1
+    viewBox:
+      - 864
+      - 1
+    points: 0,0 864,0
+    border:
+      width: 0.6
+      color: '#c3bfb7'
+  - elementId: t21
+    elementType: text
+    bounds:
+      - 48
+      - 475
+      - 864
+      - 25
+    content:
+      text: 本次最有效的一步，是把"整帧恒定值"换成了一个可比较的数字：相邻字变化次数。
+      fontFamily: *f
+      fontSize: 13
+      color: '#252824'
+      lineHeight: 1.1
+  - elementId: t22
+    elementType: text
+    bounds:
+      - 48
+      - 507
+      - 783
+      - 16
+    content:
+      text: 调试方法 / 本次实际采用
+      fontFamily: *f
+      fontSize: 9
+      color: '#68665F'
+      lineHeight: 1.1
+  - elementId: t23
+    elementType: text
+    bounds:
+      - 871
+      - 504
+      - 41
+      - 22
+    content:
+      text: '04'
+      fontFamily: *f
+      fontSize: 11
+      color: '#252824'
+      lineHeight: 1.1

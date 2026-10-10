@@ -1,0 +1,335 @@
+pageType: content
+background:
+  type: solid
+  color: '#F0EAE0'
+notes: 嵌入式软件学习建议，四个阶段的路线。
+elements:
+  - elementId: t1
+    elementType: text
+    bounds:
+      - 48
+      - 27
+      - 665
+      - 20
+    content:
+      text: LEARNING PATH
+      fontFamily: &f
+        latin: Arial
+        ea: Noto Sans CJK SC
+        mac: PingFang SC
+        win: Microsoft YaHei
+      fontSize: 10
+      color: '#252824'
+      lineHeight: 1.1
+      letterSpacing: 1.2
+  - elementId: l2
+    elementType: line
+    bounds:
+      - 48
+      - 59
+      - 864
+      - 1
+    viewBox:
+      - 864
+      - 1
+    points: 0,0 864,0
+    border:
+      width: 0.6
+      color: '#b3b0a8'
+  - elementId: t3
+    elementType: text
+    bounds:
+      - 48
+      - 76
+      - 864
+      - 64
+    content:
+      text: 嵌入式软件：四个阶段的学习路线
+      fontFamily: *f
+      fontSize: 32
+      color: '#252824'
+      lineHeight: 1.1
+      bold: true
+  - elementId: t4
+    elementType: text
+    bounds:
+      - 754
+      - 46
+      - 158
+      - 13
+    content:
+      text: 学习建议
+      fontFamily: *f
+      fontSize: 9
+      color: '#62625c'
+      lineHeight: 1.1
+      align: right
+  - elementId: t5
+    elementType: text
+    bounds:
+      - 48
+      - 152
+      - 850
+      - 25
+    content:
+      text: 顺序很重要：先练"看得见"，再练"写得快"。
+      fontFamily: *f
+      fontSize: 13
+      color: '#252824'
+      lineHeight: 1.1
+  - elementId: t6
+    elementType: text
+    bounds:
+      - 48
+      - 205
+      - 243
+      - 30
+    content:
+      text: 阶段 1 · C 与体系结构
+      fontFamily: *f
+      fontSize: 17
+      color: '#252824'
+      lineHeight: 1.1
+  - elementId: t7
+    elementType: text
+    bounds:
+      - 48
+      - 235
+      - 243
+      - 24
+    content:
+      text: 指针、结构体、volatile、栈与链接脚本
+      fontFamily: *f
+      fontSize: 11
+      color: '#62625c'
+      lineHeight: 1.1
+  - elementId: s8
+    elementType: shape
+    bounds:
+      - 305
+      - 217
+      - 132.3
+      - 22
+    shapeName: rect
+    fill:
+      type: solid
+      color: '#b9b6ad'
+  - elementId: s9
+    elementType: shape
+    bounds:
+      - 434.3
+      - 225
+      - 6
+      - 6
+    shapeName: ellipse
+    fill:
+      type: solid
+      color: '#807f79'
+  - elementId: t10
+    elementType: text
+    bounds:
+      - 48
+      - 266
+      - 243
+      - 30
+    content:
+      text: 阶段 2 · 手册与外设
+      fontFamily: *f
+      fontSize: 17
+      color: '#252824'
+      lineHeight: 1.1
+  - elementId: t11
+    elementType: text
+    bounds:
+      - 48
+      - 296
+      - 243
+      - 24
+    content:
+      text: 会读时序图和寄存器位，理解时钟与中断
+      fontFamily: *f
+      fontSize: 11
+      color: '#62625c'
+      lineHeight: 1.1
+  - elementId: s12
+    elementType: shape
+    bounds:
+      - 407.9
+      - 278
+      - 191.1
+      - 22
+    shapeName: rect
+    fill:
+      type: solid
+      color: '#b9b6ad'
+  - elementId: s13
+    elementType: shape
+    bounds:
+      - 596
+      - 286
+      - 6
+      - 6
+    shapeName: ellipse
+    fill:
+      type: solid
+      color: '#807f79'
+  - elementId: t14
+    elementType: text
+    bounds:
+      - 48
+      - 327
+      - 243
+      - 30
+    content:
+      text: 阶段 3 · 调试与测量
+      fontFamily: *f
+      fontSize: 17
+      color: '#252824'
+      lineHeight: 1.1
+  - elementId: t15
+    elementType: text
+    bounds:
+      - 48
+      - 357
+      - 243
+      - 24
+    content:
+      text: 示波器、逻辑分析仪、调试器与自检代码
+      fontFamily: *f
+      fontSize: 11
+      color: '#62625c'
+      lineHeight: 1.1
+  - elementId: s16
+    elementType: shape
+    bounds:
+      - 569.6
+      - 339
+      - 161.7
+      - 22
+    shapeName: rect
+    fill:
+      type: solid
+      color: '#252824'
+  - elementId: s17
+    elementType: shape
+    bounds:
+      - 728.3
+      - 347
+      - 6
+      - 6
+    shapeName: ellipse
+    fill:
+      type: solid
+      color: '#252824'
+  - elementId: t18
+    elementType: text
+    bounds:
+      - 48
+      - 388
+      - 243
+      - 30
+    content:
+      text: 阶段 4 · 工程与沉淀
+      fontFamily: *f
+      fontSize: 17
+      color: '#252824'
+      lineHeight: 1.1
+  - elementId: t19
+    elementType: text
+    bounds:
+      - 48
+      - 418
+      - 243
+      - 24
+    content:
+      text: 版本管理、可复现例程、把踩坑写成文档
+      fontFamily: *f
+      fontSize: 11
+      color: '#62625c'
+      lineHeight: 1.1
+  - elementId: s20
+    elementType: shape
+    bounds:
+      - 716.6
+      - 400
+      - 176.4
+      - 22
+    shapeName: rect
+    fill:
+      type: solid
+      color: '#b9b6ad'
+  - elementId: s21
+    elementType: shape
+    bounds:
+      - 890
+      - 408
+      - 6
+      - 6
+    shapeName: ellipse
+    fill:
+      type: solid
+      color: '#807f79'
+  - elementId: s22
+    elementType: shape
+    bounds:
+      - 712
+      - 444
+      - 8
+      - 8
+    shapeName: ellipse
+    fill:
+      type: solid
+      color: '#B5392A'
+  - elementId: l23
+    elementType: line
+    bounds:
+      - 48
+      - 465
+      - 864
+      - 1
+    viewBox:
+      - 864
+      - 1
+    points: 0,0 864,0
+    border:
+      width: 0.6
+      color: '#c3bfb7'
+  - elementId: t24
+    elementType: text
+    bounds:
+      - 48
+      - 475
+      - 864
+      - 25
+    content:
+      text: 具体建议：每个新外设都先写"最小可观测例程"，再谈功能与性能。
+      fontFamily: *f
+      fontSize: 13
+      color: '#252824'
+      lineHeight: 1.1
+  - elementId: t25
+    elementType: text
+    bounds:
+      - 48
+      - 507
+      - 783
+      - 16
+    content:
+      text: 学习建议 / 面向嵌入式软件方向
+      fontFamily: *f
+      fontSize: 9
+      color: '#68665F'
+      lineHeight: 1.1
+  - elementId: t26
+    elementType: text
+    bounds:
+      - 871
+      - 504
+      - 41
+      - 22
+    content:
+      text: '12'
+      fontFamily: *f
+      fontSize: 11
+      color: '#252824'
+      lineHeight: 1.1

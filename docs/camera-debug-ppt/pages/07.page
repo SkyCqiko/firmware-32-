@@ -1,0 +1,286 @@
+pageType: content
+background:
+  type: solid
+  color: '#F0EAE0'
+notes: 案例二。用一帧数据量的算术把同步极性定案。
+elements:
+  - elementId: t1
+    elementType: text
+    bounds:
+      - 48
+      - 27
+      - 665
+      - 20
+    content:
+      text: CASE 02 · TIMING PHASE
+      fontFamily: &f
+        latin: Arial
+        ea: Noto Sans CJK SC
+        mac: PingFang SC
+        win: Microsoft YaHei
+      fontSize: 10
+      color: '#252824'
+      lineHeight: 1.1
+      letterSpacing: 1.2
+  - elementId: l2
+    elementType: line
+    bounds:
+      - 48
+      - 59
+      - 864
+      - 1
+    viewBox:
+      - 864
+      - 1
+    points: 0,0 864,0
+    border:
+      width: 0.6
+      color: '#b3b0a8'
+  - elementId: t3
+    elementType: text
+    bounds:
+      - 48
+      - 76
+      - 864
+      - 64
+    content:
+      text: 案例② 用算术定案：一帧为什么搬了 17 遍
+      fontFamily: *f
+      fontSize: 32
+      color: '#252824'
+      lineHeight: 1.1
+      bold: true
+  - elementId: t4
+    elementType: text
+    bounds:
+      - 754
+      - 46
+      - 158
+      - 13
+    content:
+      text: 案例 02
+      fontFamily: *f
+      fontSize: 9
+      color: '#62625c'
+      lineHeight: 1.1
+      align: right
+  - elementId: t5
+    elementType: text
+    bounds:
+      - 48
+      - 168
+      - 290
+      - 26
+    content:
+      text: 定量判据
+      fontFamily: *f
+      fontSize: 12
+      color: '#252824'
+      lineHeight: 1.1
+  - elementId: t6
+    elementType: text
+    bounds:
+      - 48
+      - 217
+      - 288
+      - 121
+    content:
+      text: |-
+        17 圈
+        对
+        1 圈
+      fontFamily: *f
+      fontSize: 34
+      color: '#252824'
+      lineHeight: 1.1
+      bold: true
+  - elementId: t7
+    elementType: text
+    bounds:
+      - 48
+      - 369
+      - 281
+      - 78
+    content:
+      text: |-
+        把"感觉不对"
+        换成算得出来的倍率
+      fontFamily: *f
+      fontSize: 20
+      color: '#252824'
+      lineHeight: 1.1
+  - elementId: t8
+    elementType: text
+    bounds:
+      - 414
+      - 174
+      - 487
+      - 32
+    content:
+      text: HS=HIGH：一帧搬了 17 圈，理论只需 1 圈
+      fontFamily: *f
+      fontSize: 20
+      color: '#252824'
+      lineHeight: 1.1
+  - elementId: s9
+    elementType: shape
+    bounds:
+      - 415
+      - 225
+      - 272
+      - 20
+    shapeName: rect
+    fill:
+      type: solid
+      color: '#b3b0a8'
+  - elementId: s10
+    elementType: shape
+    bounds:
+      - 415
+      - 255
+      - 16
+      - 20
+    shapeName: rect
+    fill:
+      type: solid
+      color: '#B5392A'
+  - elementId: t11
+    elementType: text
+    bounds:
+      - 754
+      - 229
+      - 158
+      - 45
+    content:
+      text: 17 圈
+      fontFamily: *f
+      fontSize: 23
+      color: '#252824'
+      lineHeight: 1.1
+  - elementId: t12
+    elementType: text
+    bounds:
+      - 414
+      - 316
+      - 487
+      - 32
+    content:
+      text: HS=LOW：一帧正好 1 圈，画面正常
+      fontFamily: *f
+      fontSize: 20
+      color: '#252824'
+      lineHeight: 1.1
+  - elementId: s13
+    elementType: shape
+    bounds:
+      - 415
+      - 367
+      - 16
+      - 20
+    shapeName: rect
+    fill:
+      type: solid
+      color: '#b3b0a8'
+  - elementId: s14
+    elementType: shape
+    bounds:
+      - 415
+      - 397
+      - 16
+      - 20
+    shapeName: rect
+    fill:
+      type: solid
+      color: '#B5392A'
+  - elementId: t15
+    elementType: text
+    bounds:
+      - 754
+      - 371
+      - 158
+      - 45
+    content:
+      text: 1 圈
+      fontFamily: *f
+      fontSize: 23
+      color: '#252824'
+      lineHeight: 1.1
+  - elementId: t16
+    elementType: text
+    bounds:
+      - 456
+      - 222
+      - 220
+      - 24
+    content:
+      text: 灰 = 实测字符数
+      fontFamily: *f
+      fontSize: 10
+      color: '#62625c'
+      lineHeight: 1.1
+  - elementId: t17
+    elementType: text
+    bounds:
+      - 456
+      - 364
+      - 220
+      - 24
+    content:
+      text: 红 = 理论 1 圈
+      fontFamily: *f
+      fontSize: 10
+      color: '#62625c'
+      lineHeight: 1.1
+  - elementId: l18
+    elementType: line
+    bounds:
+      - 48
+      - 465
+      - 864
+      - 1
+    viewBox:
+      - 864
+      - 1
+    points: 0,0 864,0
+    border:
+      width: 0.6
+      color: '#c3bfb7'
+  - elementId: t19
+    elementType: text
+    bounds:
+      - 48
+      - 475
+      - 864
+      - 25
+    content:
+      text: 算式：12 MHz × 31 ms = 372000 B ÷ 4 = 93000 字 ÷ 5520 = 16.9 圈，与实测 17 圈吻合。
+      fontFamily: *f
+      fontSize: 13
+      color: '#252824'
+      lineHeight: 1.1
+  - elementId: t20
+    elementType: text
+    bounds:
+      - 48
+      - 507
+      - 783
+      - 16
+    content:
+      text: 实测记录 / 改 HS=LOW 后相邻字变化从 13 升到 5294
+      fontFamily: *f
+      fontSize: 9
+      color: '#68665F'
+      lineHeight: 1.1
+  - elementId: t21
+    elementType: text
+    bounds:
+      - 871
+      - 504
+      - 41
+      - 22
+    content:
+      text: '07'
+      fontFamily: *f
+      fontSize: 11
+      color: '#252824'
+      lineHeight: 1.1

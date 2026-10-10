@@ -1,0 +1,325 @@
+pageType: content
+background:
+  type: solid
+  color: '#F0EAE0'
+notes: 最终链路配置与上电自检三查。
+elements:
+  - elementId: t1
+    elementType: text
+    bounds:
+      - 48
+      - 27
+      - 665
+      - 20
+    content:
+      text: FINAL CONFIGURATION
+      fontFamily: &f
+        latin: Arial
+        ea: Noto Sans CJK SC
+        mac: PingFang SC
+        win: Microsoft YaHei
+      fontSize: 10
+      color: '#252824'
+      lineHeight: 1.1
+      letterSpacing: 1.2
+  - elementId: l2
+    elementType: line
+    bounds:
+      - 48
+      - 59
+      - 864
+      - 1
+    viewBox:
+      - 864
+      - 1
+    points: 0,0 864,0
+    border:
+      width: 0.6
+      color: '#b3b0a8'
+  - elementId: t3
+    elementType: text
+    bounds:
+      - 48
+      - 76
+      - 864
+      - 64
+    content:
+      text: 最终配置：一条链上四处关键参数
+      fontFamily: *f
+      fontSize: 32
+      color: '#252824'
+      lineHeight: 1.1
+      bold: true
+  - elementId: t4
+    elementType: text
+    bounds:
+      - 754
+      - 46
+      - 158
+      - 13
+    content:
+      text: 配置清单
+      fontFamily: *f
+      fontSize: 9
+      color: '#62625c'
+      lineHeight: 1.1
+      align: right
+  - elementId: s5
+    elementType: shape
+    bounds:
+      - 70
+      - 164
+      - 162
+      - 49
+    shapeName: rect
+    fill:
+      type: solid
+      color: '#E7E0D4'
+    border:
+      width: 0.8
+      color: '#252824'
+  - elementId: t6
+    elementType: text
+    bounds:
+      - 82
+      - 177
+      - 138
+      - 30
+    content:
+      text: OV2640
+      fontFamily: *f
+      fontSize: 18
+      color: '#181915'
+      lineHeight: 1.1
+      align: center
+  - elementId: l7
+    elementType: line
+    bounds:
+      - 232
+      - 188
+      - 57
+      - 1
+    viewBox:
+      - 57
+      - 1
+    points: 0,0 57,0
+    border:
+      width: 1.2
+      color: '#B5392A'
+  - elementId: s8
+    elementType: shape
+    bounds:
+      - 289
+      - 164
+      - 162
+      - 49
+    shapeName: rect
+    fill:
+      type: solid
+      color: '#E7E0D4'
+    border:
+      width: 0.8
+      color: '#252824'
+  - elementId: t9
+    elementType: text
+    bounds:
+      - 301
+      - 177
+      - 138
+      - 30
+    content:
+      text: DCMI
+      fontFamily: *f
+      fontSize: 18
+      color: '#181915'
+      lineHeight: 1.1
+      align: center
+  - elementId: l10
+    elementType: line
+    bounds:
+      - 451
+      - 188
+      - 57
+      - 1
+    viewBox:
+      - 57
+      - 1
+    points: 0,0 57,0
+    border:
+      width: 1.2
+      color: '#B5392A'
+  - elementId: s11
+    elementType: shape
+    bounds:
+      - 508
+      - 164
+      - 162
+      - 49
+    shapeName: rect
+    fill:
+      type: solid
+      color: '#E7E0D4'
+    border:
+      width: 0.8
+      color: '#252824'
+  - elementId: t12
+    elementType: text
+    bounds:
+      - 520
+      - 177
+      - 138
+      - 30
+    content:
+      text: DMA2_Stream1
+      fontFamily: *f
+      fontSize: 15
+      color: '#181915'
+      lineHeight: 1.1
+      align: center
+  - elementId: l13
+    elementType: line
+    bounds:
+      - 670
+      - 188
+      - 57
+      - 1
+    viewBox:
+      - 57
+      - 1
+    points: 0,0 57,0
+    border:
+      width: 1.2
+      color: '#B5392A'
+  - elementId: s14
+    elementType: shape
+    bounds:
+      - 727
+      - 164
+      - 162
+      - 49
+    shapeName: rect
+    fill:
+      type: solid
+      color: '#E7E0D4'
+    border:
+      width: 0.8
+      color: '#252824'
+  - elementId: t15
+    elementType: text
+    bounds:
+      - 739
+      - 177
+      - 138
+      - 30
+    content:
+      text: ST7735
+      fontFamily: *f
+      fontSize: 18
+      color: '#181915'
+      lineHeight: 1.1
+      align: center
+  - elementId: t16
+    elementType: text
+    bounds:
+      - 166
+      - 220
+      - 189
+      - 27
+    content:
+      text: 输出 120×92 · RGB565
+      fontFamily: *f
+      fontSize: 13
+      color: '#252824'
+      lineHeight: 1.1
+  - elementId: t17
+    elementType: text
+    bounds:
+      - 385
+      - 266
+      - 226
+      - 27
+    content:
+      text: 极性 R·L·L · 8 位硬同步
+      fontFamily: *f
+      fontSize: 13
+      color: '#252824'
+      lineHeight: 1.1
+  - elementId: t18
+    elementType: text
+    bounds:
+      - 604
+      - 312
+      - 226
+      - 27
+    content:
+      text: CH1 · 循环 · 字对齐
+      fontFamily: *f
+      fontSize: 13
+      color: '#252824'
+      lineHeight: 1.1
+  - elementId: t19
+    elementType: text
+    bounds:
+      - 166
+      - 370
+      - 627
+      - 27
+    content:
+      text: 采集长度 = 5520 字（一帧）· 显示窗口两端同偏移 · SPI ≤ 10.5 MHz
+      fontFamily: *f
+      fontSize: 14
+      color: '#252824'
+      lineHeight: 1.1
+  - elementId: l20
+    elementType: line
+    bounds:
+      - 48
+      - 465
+      - 864
+      - 1
+    viewBox:
+      - 864
+      - 1
+    points: 0,0 864,0
+    border:
+      width: 0.6
+      color: '#c3bfb7'
+  - elementId: t21
+    elementType: text
+    bounds:
+      - 48
+      - 475
+      - 864
+      - 25
+    content:
+      text: 上电三查：ov2640_id_ok = 1 ・ SCCB 无 NACK ・ 一帧正好 1 圈。
+      fontFamily: *f
+      fontSize: 13
+      color: '#252824'
+      lineHeight: 1.1
+  - elementId: t22
+    elementType: text
+    bounds:
+      - 48
+      - 507
+      - 783
+      - 16
+    content:
+      text: 最终配置 / 三条自检同时成立才算通过
+      fontFamily: *f
+      fontSize: 9
+      color: '#68665F'
+      lineHeight: 1.1
+  - elementId: t23
+    elementType: text
+    bounds:
+      - 871
+      - 504
+      - 41
+      - 22
+    content:
+      text: '10'
+      fontFamily: *f
+      fontSize: 11
+      color: '#252824'
+      lineHeight: 1.1

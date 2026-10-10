@@ -1,0 +1,22 @@
+version: v2
+title: STM32F407 + OV2640 摄像头采集调试实录
+size:
+  - 960
+  - 540
+template:
+  id: dsh-engineering-blueprint
+  name: Engineering Blueprint
+pages:
+  - pages/01.page
+  - pages/02.page
+  - pages/03.page
+  - pages/04.page
+  - pages/05.page
+  - pages/06.page
+  - pages/07.page
+  - pages/08.page
+  - pages/09.page
+  - pages/10.page
+  - pages/11.page
+  - pages/12.page
+  - pages/13.page
