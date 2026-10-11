@@ -85,6 +85,7 @@ void Encoder_Init(void)
   htim1.Init.AutoReloadPreload = TIM_AUTORELOAD_PRELOAD_DISABLE;
 
   /* 编码器模式下 CH1/CH2 都配置为输入, 分别从 TI1/TI2 引脚取信号 */
+  sEncoderConfig.EncoderMode = TIM_ENCODERMODE_TI12;
   sEncoderConfig.IC1Polarity = (ENC1_INVERT_DIR != 0U) ? TIM_ENCODERINPUTPOLARITY_FALLING
                                                        : TIM_ENCODERINPUTPOLARITY_RISING;
   sEncoderConfig.IC1Selection = TIM_ICSELECTION_DIRECTTI;   /* CH1 直连 TI1(A相) */
@@ -96,10 +97,7 @@ void Encoder_Init(void)
   sEncoderConfig.IC2Prescaler = TIM_ICPSC_DIV1;
   sEncoderConfig.IC2Filter = ENC_INPUT_FILTER;
 
-  if (HAL_TIM_Encoder_Init(&htim1, &sEncoderConfig) != HAL_OK)  /* 内部会调用 HAL_TIM_Encoder_MspInit */
-  {
-    Error_Handler();
-  }
+  HAL_TIM_Encoder_Init(&htim1, &sEncoderConfig);
   __HAL_TIM_SET_COUNTER(&htim1, 0);
   HAL_TIM_Encoder_Start(&htim1, TIM_CHANNEL_ALL);               /* 启动 CH1/CH2 输入与计数器 */
 
@@ -123,10 +121,8 @@ void Encoder_Init(void)
   sEncoderConfig.IC2Prescaler = TIM_ICPSC_DIV1;
   sEncoderConfig.IC2Filter = ENC_INPUT_FILTER;
 
-  if (HAL_TIM_Encoder_Init(&htim5, &sEncoderConfig) != HAL_OK)
-  {
-    Error_Handler();
-  }
+  HAL_TIM_Encoder_Init(&htim5, &sEncoderConfig);
+
   __HAL_TIM_SET_COUNTER(&htim5, 0);
   HAL_TIM_Encoder_Start(&htim5, TIM_CHANNEL_ALL);
 
@@ -139,8 +135,6 @@ void Encoder_Init(void)
   g_enc2_count = 0;
   g_enc1_delta = 0;
   g_enc2_delta = 0;
-  Encoder_Reset(ENC_1);
-  Encoder_Reset(ENC_2);
 }
 
 /**

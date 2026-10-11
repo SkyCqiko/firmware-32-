@@ -596,10 +596,10 @@ void Gui_DrawNum(uint16_t x, uint16_t y, uint16_t fc, uint16_t bc, int32_t num, 
 		mag/=10u;
 	} while ((mag!=0u)&&(digits<10u));
 
-	pad=(digits<width)?(uint8_t)(width-digits):0u;	/* 不足 width 位就补空格, 右对齐 */
+	pad=(digits<width)?(uint8_t)(width-digits):0u;	/* 不足 width 位就补0, 右对齐 */
 	while (pad!=0u)
 	{
-		buf[pos++]=' ';
+		buf[pos++]='0';
 		pad--;
 	}
 

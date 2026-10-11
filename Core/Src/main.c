@@ -40,7 +40,7 @@ uint16_t i;
 float Path_error;//路径误差
 static uint8_t Keynum =1;         //按键
 static uint8_t Stop_flag =0;      //停止标志位
-int32_t Encoder_Data = 0;  //编码器读取
+static int32_t Encoder_Data = 0;  //编码器读取
 
 extern uint32_t Image[DEAL_IMAGE_W*DEAL_IMAGE_H/2];      /* 图像缓存区*/
 extern uint8_t Gray_Image[DEAL_IMAGE_H][DEAL_IMAGE_W];
@@ -67,15 +67,14 @@ int main(void)
   while (1)
   {
     Path_error = Image_Process(20,0 );
-    if(Keynum == 1){PWM_A_OUT(30);PWM_B_OUT(30);Stop_flag = 0;}
+    if(Keynum == 1){PWM_A_OUT(30);PWM_B_OUT(30);Stop_flag = 0;g_tim2_tick=0;}
     if(Keynum == 2){PWM_A_OUT(-30);PWM_B_OUT(-30);Stop_flag = 0;}
     if(Keynum == 3)
     {
       if( Stop_flag==0){PWM_A_OUT(50);PWM_B_OUT(50);}
       else {PWM_A_OUT(0);PWM_B_OUT(0);}
     }
-     Encoder_Data = Encoder_GetDelta(ENC_1);
-    Lcd_DisplayImage((uint16_t *)Image,IMG_W,IMG_H);
+    Lcd_DisplayImage_Gray_2(Gray_Image[0],IMG_W ,IMG_H );
   }
 }
 /*=================================================================================================*/
@@ -94,10 +93,10 @@ void TIM2_IRQHandler(void)
   HAL_TIM_IRQHandler(&htim2);
   /* ---- 每 10ms 执行一次的代码写在这里 ---- */
     Keynum = Key_readBit();  //按键读取
-  Encoder_Reset(ENC_1);
     Encoder_Update();
+    Encoder_Data = Encoder_GetDelta(ENC_2);
   g_tim2_tick++;             /* 10ms 计数, 主循环里可用它做非阻塞延时 */
-  if(g_tim2_tick%2000==0)Stop_flag = 1;
+  if(g_tim2_tick==200)Stop_flag = 1;
 }
 /*===========================================================*/
 
